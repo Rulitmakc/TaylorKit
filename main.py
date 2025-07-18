@@ -137,6 +137,8 @@ def show_banner():
     ║#        (5):инфа номера                    (6):сносер                #║
     ║#                                                                     #║
     ║#           (7):утечки                     (8):троллинг               #║
+    ║#                                                                     #║   
+    ║#                 (9):тест ддос(прокси но 50/50 ворк                  #║
     ║#                                                                     #║
     ║#                           (99):выход                                #║
     ║#                                                                     #║
@@ -198,6 +200,9 @@ def main_menu():
                     main_menu()
             else:
                 main_menu()
+        
+        elif choice == "9":
+            subprocess.run(['python','9.py'])
         elif choice == "99":
             subprocess.run(['python','99.py'])
             break

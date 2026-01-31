@@ -4,6 +4,7 @@ from email.mime.multipart import MIMEMultipart
 import time
 from pystyle import Colors, Colorate
 import subprocess
+import os 
 
 senders = {
     'interollsnos@rambler.ru': 'feDLSiueGT89APb81v74',
@@ -55,6 +56,8 @@ receivers = ['sms@telegram.org', 'dmca@telegram.org', 'abuse@telegram.org',
 
 def logo():
 
+     os.system('cls' if os.name == 'nt' else 'clear')
+
      print(Colorate.Horizontal(Colors.blue_to_red, """
                                
     ████████╗░█████╗░██╗░░░██╗██╗░░░░░░█████╗░██████╗░
@@ -71,7 +74,7 @@ def logo():
             ██████╔╝██║░╚███║╚█████╔╝██████╔╝
             ╚═════╝░╚═╝░░╚══╝░╚════╝░╚═════╝░
             ╔══════════════════════════════════╗
-            ║# https://t.me/+w3jbAuqfNzM1MDQy #║
+            ║##################################║
             ║#                                #║
             ║#          (1):снос ака          #║
             ║#                                #║

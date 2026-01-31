@@ -3,6 +3,10 @@ import fake_useragent
 from pystyle import Colors, Colorate
 import time
 import subprocess
+import os 
+
+os.system('cls' if os.name == 'nt' else 'clear')
+
 banner = """
 
 ████████╗░█████╗░██╗░░░██╗██╗░░░░░░█████╗░██████╗░
@@ -20,7 +24,7 @@ banner = """
     ╚═════╝░╚═╝░░░░░╚═╝░░╚═╝╚═╝░░░░░╚═╝
 
     ╔══════════════════════════════════╗
-    ║# https://t.me/+w3jbAuqfNzM1MDQy #║
+    ║##################################║
     ║#                                #║
     ║#           [1] спам             #║
     ║#                                #║

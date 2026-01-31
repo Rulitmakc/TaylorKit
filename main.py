@@ -1,4 +1,4 @@
-from pystyle import Colors
+
 import subprocess
 import os
 import asyncio
@@ -6,43 +6,30 @@ import aiohttp
 import socket
 import random
 import time
-from pystyle import Colors, Colorate
-import subprocess
 import requests
 from bs4 import BeautifulSoup
 from pystyle import *
-import socket
-import os
 import csv
-import time
-import subprocess
-import phonenumbers
 from ipwhois import IPWhois
-import pystyle
-import telebot
 from telebot import types
 import csv
-import time
 import json
-from phonenumbers import geocoder, carrier, timezone
-import ctypes
+from phonenumbers import geocoder, carrier, timezone, phonenumber
 from ctypes import wintypes
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-import os
-import termcolor
 from termcolor import colored
-from pystyle import Colors, Colorate
-import subprocess
 from pystyle import Colorate, Colors, Center
-import os
-import phonenumbers
-from phonenumbers import geocoder, carrier, timezone
-import requests
 import webbrowser
 import urllib.parse
 import platform
+import aiofiles
+import fake_useragent
+import whois 
+import phonenumbers
+import colorama
+
 
 def lookup_phone(phone):
     try:
@@ -108,7 +95,7 @@ Intro = """
 Welcome to Taylor kit! Press "Enter" to continue.
 """
 
-Anime.Fade(Center.Center(Intro), Colors.blue_to_red,Colorate.Vertical, interval=0.010, enter=True)
+Anime.Fade(Center.Center(Intro), Colors.blue_to_red,Colorate.Vertical, interval=0.060, enter=True)
 
 def show_banner():
     banner = """
@@ -128,7 +115,7 @@ def show_banner():
                         ╚═╝░░╚═╝╚═╝░░░╚═╝░░░
 
     ╔═══════════════════════════════════════════════════════════════════════╗
-    ║################## https://t.me/+w3jbAuqfNzM1MDQy #####################║
+    ║#######################################################################║
     ║#                                                                     #║
     ║#           (1):ддос                      (2):поиск по бд             #║
     ║#                                                                     #║
@@ -138,7 +125,7 @@ def show_banner():
     ║#                                                                     #║
     ║#           (7):утечки                     (8):троллинг               #║
     ║#                                                                     #║   
-    ║#                 (9):тест ддос(прокси но 50/50 ворк                  #║
+    ║#                       (9):спам на почту                             #║
     ║#                                                                     #║
     ║#                           (99):выход                                #║
     ║#                                                                     #║
@@ -202,7 +189,8 @@ def main_menu():
                 main_menu()
         
         elif choice == "9":
-            subprocess.run(['python','9.py'])
+            subprocess.run(['python','12.py'])
+
         elif choice == "99":
             subprocess.run(['python','99.py'])
             break

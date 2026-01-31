@@ -1,4 +1,3 @@
-
 import os
 import sys
 import time
@@ -13,15 +12,11 @@ import subprocess
 import re
 from datetime import datetime, timedelta
 from requests.exceptions import RequestException
-import requests
 from bs4 import BeautifulSoup
-import phonenumbers
 from phonenumbers import geocoder, carrier, timezone
 import whois
-import colorama
 from colorama import Fore, init
 from pystyle import Anime, Colors, Colorate, Center
-import termcolor
 from termcolor import colored
 from pystyle import Write, Colors
 

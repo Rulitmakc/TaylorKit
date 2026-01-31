@@ -2,9 +2,9 @@ import whois
 from pystyle import Colors, Colorate
 import time
 import subprocess
+import os 
 
-def clear_console():
-    os.system('cls' if os.name == 'nt' else 'clear')
+os.system('cls' if os.name == 'nt' else 'clear')
 
 print(Colorate.Vertical(Colors.blue_to_red, """
 

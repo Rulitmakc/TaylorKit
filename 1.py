@@ -1,7 +1,6 @@
-import os
+
 import asyncio
 import aiohttp
-import socket
 import random
 import time
 from pystyle import Colors, Colorate
@@ -12,18 +11,10 @@ from pystyle import *
 import socket
 import os
 import csv
-import time
-import subprocess
-import phonenumbers
 from ipwhois import IPWhois
-import pystyle
-import telebot
 from telebot import types
-import csv
-import time
 import json
 from phonenumbers import geocoder, carrier, timezone
-import ctypes
 from ctypes import wintypes
 
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -46,7 +37,7 @@ def show_banner():
         ╚═════╝░╚═════╝░░╚════╝░╚═════╝░
 
       ╔══════════════════════════════════╗
-      ║# https://t.me/+w3jbAuqfNzM1MDQy #║
+      ║##################################║
       ║#                                #║
       ║#        [1] HTTP(s) DDoS        #║
       ║#                                #║

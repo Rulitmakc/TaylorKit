@@ -1,6 +1,5 @@
 from pystyle import Colorate, Colors, Center
 import os
-import phonenumbers
 from phonenumbers import geocoder, carrier, timezone
 import requests
 import webbrowser
@@ -8,8 +7,8 @@ import urllib.parse
 import platform
 import subprocess
 
-def clear_console():
-    os.system('cls' if os.name == 'nt' else 'clear')
+
+os.system('cls' if os.name == 'nt' else 'clear')
 
 def search_databases(search_type, query):
     found = False
@@ -117,7 +116,7 @@ def main():
 ---------------------------------------------------------------------------------------
     ╔═══════════════════════════════════════════════════════════════════════╗
     ║$$$$$$$$$$$$$$$$$$$$║------------------------------║$$$$$$$$$$$$$$$$$$$║
-    ║$$$$$$$$$$$$$$$$$$$║ https://t.me/+w3jbAuqfNzM1MDQy ║$$$$$$$$$$$$$$$$$$║
+    ║$$$$$$$$$$$$$$$$$$$║################################║$$$$$$$$$$$$$$$$$$║
     ║$$$$$$$$$$$$$$$$$$$$║------------------------------║$$$$$$$$$$$$$$$$$$$║
     ║═══════════════════════════════════════════════════════════════════════║
     ║                                                                       ║

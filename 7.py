@@ -19,6 +19,7 @@ from colorama import Fore, init
 from pystyle import Anime, Colors, Colorate, Center
 from termcolor import colored
 from pystyle import Write, Colors
+import requests
 
 os.system('cls' if os.name == 'nt' else 'clear')
 

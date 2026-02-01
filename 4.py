@@ -1,4 +1,4 @@
-import whois 
+import whois
 from pystyle import Colors, Colorate
 import time
 import subprocess
@@ -32,7 +32,8 @@ print(Colorate.Vertical(Colors.blue_to_red, """
      ║                                      ║
      ║            (99):выйти                ║
      ║                                      ║
-     ║                                      ║
+     ║ перед использованием скачайте модуль ║
+     ║          python_whois                ║
      ╚══════════════════════════════════════╝
 """))
 def main():
@@ -47,7 +48,7 @@ def main():
             print(domain_info)
 
         elif choice == "2":
-            ip = input (Colorate.Horizontal(Colors.blue_to_red, "впиши айпи (192.148.147.23): "))
+            ip = input (Colorate.Horizontal(Colors.blue_to_red, "впиши айпи (192.168.0.1): "))
             time.sleep(1)
             print(Colorate.Horizontal(Colors.blue_to_green, "поиск.."))
             time.sleep(2)
